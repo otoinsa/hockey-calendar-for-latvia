@@ -1,0 +1,5 @@
+.env
+node_modules/
+.DS_Store
+hockey-calendar.ics
+hockey-calendar-latvia.ics
