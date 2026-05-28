@@ -35,7 +35,6 @@ function generateIcs(games) {
 		"CALSCALE:GREGORIAN",
 		"METHOD:PUBLISH",
 		"X-WR-CALNAME:Latvia - IIHF World Championship 2026",
-		"X-WR-TIMEZONE:Europe/Zurich",
 		"X-WR-CALDESC:2026 IIHF Ice Hockey World Championship - Latvia Games Only",
 	];
 
