@@ -6,6 +6,15 @@ Generates Latvia-only hockey schedule in both **iCal** and **JSON** formats. Aut
 
 **Subscribe to the Latvia calendar:**
 
+### Apple Devices (iOS, macOS)
+1. Open **Calendar** app
+2. Settings → **Add Calendar** → **Add Subscription**
+3. Paste this URL:
+   ```
+   https://raw.githubusercontent.com/otoinsa/hockey-calendar-for-latvia/main/output/latvia-hockey-cal.ical
+   ```
+4. Tap **Subscribe**
+
 ### Google Calendar
 1. Go to [calendar.google.com](https://calendar.google.com)
 2. Click **+** next to "Other calendars"
@@ -79,7 +88,7 @@ This project was **painstakingly built using cheap LLMs**, navigating through:
 - Hardcoded game schedules that violated every software engineering principle
 - A 405 HTTP error trying to POST to Google Calendar's read-only endpoint
 - Multiple refactorings to make it actually maintainable
-- Delta detection logic that took 3 attempts to get right
+- Delta detection logic that took 10 attempts to get right (it still might not be right)
 - Timezone conversion bugs (CET → UTC wasn't obvious)
 - JSON time format conversions that looked like spaghetti code
 
