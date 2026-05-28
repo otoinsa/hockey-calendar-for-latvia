@@ -5,16 +5,44 @@ Generates Latvia-only hockey schedule in both **iCal** and **JSON** formats. Aut
 ## 🚀 Quick Start
 
 **Subscribe to the Latvia calendar:**
-- **iCal**: Add to Google Calendar via URL → `https://raw.githubusercontent.com/otoinsa/hockey-calendar-for-latvia/main/output/latvia-hockey-cal.ical`
-- **JSON**: `https://raw.githubusercontent.com/otoinsa/hockey-calendar-for-latvia/main/output/latvia-hockey-cal.json`
 
-## 📋 Features
+### Google Calendar
+1. Go to [calendar.google.com](https://calendar.google.com)
+2. Click **+** next to "Other calendars"
+3. Select **Subscribe to calendar**
+4. Paste this URL:
+   ```
+   https://raw.githubusercontent.com/otoinsa/hockey-calendar-for-latvia/main/output/latvia-hockey-cal.ical
+   ```
+5. Click **Subscribe**
 
-- ✅ Daily updates (3 AM UTC) - not overkill hourly
-- ✅ Delta detection - only commits when games actually change
-- ✅ Dual formats - iCal + JSON with ISO 8601 Zulu times
-- ✅ Persistent cache - tracks game history
-- ✅ 8 Latvia games extracted from 61 total tournament games
+### JSON API
+Get structured data directly:
+```
+https://raw.githubusercontent.com/otoinsa/hockey-calendar-for-latvia/main/output/latvia-hockey-cal.json
+```
+
+## 📋 What's Inside
+
+- ✅ **8 Latvia games** extracted from 61 total tournament games
+- ✅ **Daily updates** (3 AM UTC) - smart enough to not spam hourly
+- ✅ **Delta detection** - only commits when games actually change
+- ✅ **Dual formats** - iCal for calendars + JSON for apps
+- ✅ **ISO 8601 Zulu times** - standardized, easy to parse
+- ✅ **Persistent cache** - tracks change history
+
+## 🏒 The 8 Latvia Games
+
+| Date | Time (UTC) | Opponent | Venue |
+|------|-----------|----------|-------|
+| May 16 | 18:20 | Switzerland | Swiss Life Arena, Zurich |
+| May 17 | 18:20 | Germany | Swiss Life Arena, Zurich |
+| May 19 | 14:20 | Austria | Swiss Life Arena, Zurich |
+| May 21 | 14:20 | Finland | Swiss Life Arena, Zurich |
+| May 23 | 10:20 | USA | Swiss Life Arena, Zurich |
+| May 24 | 14:20 | Great Britain | Swiss Life Arena, Zurich |
+| May 26 | 10:20 | Hungary | Swiss Life Arena, Zurich |
+| May 28 | 18:20 | Norway (QF) | BCF Arena, Fribourg |
 
 ## 🔄 How It Works
 
@@ -60,4 +88,5 @@ This project was **painstakingly built using cheap LLMs**, navigating through:
 Every commit represents hours of "let me try this" → "oh that doesn't work" → "wait, does the API even support that?" → "let me refactor everything."
 
 Use this as evidence that even with budget models, persistence beats perfection. 🚀
+
 
