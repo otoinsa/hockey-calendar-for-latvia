@@ -4,7 +4,7 @@
 	"description": "IIHF World Championship 2026 — Google Calendar Auto-Sync",
 	"main": "scripts/scrape.js",
 	"scripts": {
-		"build": "node scripts/scrape-latvia.js > output/latvia-hockey-cal.ical && node scripts/scrape-latvia-json.js > output/latvia-hockey-cal.json && echo '✓ Calendar built'",
+		"build": "node scripts/build.js",
 		"test": "npm run build"
 	},
 	"keywords": [
