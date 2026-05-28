@@ -31,5 +31,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add latvia-hockey-cal.ical
+          git add output/latvia-hockey-cal.ical
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update latvia hockey calendar" && git push)

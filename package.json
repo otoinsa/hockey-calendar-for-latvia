@@ -7,7 +7,7 @@
 		"scrape": "node scripts/scrape.js",
 		"scrape:latvia": "node scripts/scrape-latvia.js",
 		"push": "node scripts/push_to_gcal.js",
-		"build": "node scripts/scrape-latvia.js > latvia-hockey-cal.ical && echo '✓ Latvia calendar saved to latvia-hockey-cal.ical'",
+		"build": "node scripts/scrape-latvia.js > output/latvia-hockey-cal.ical && echo '✓ Latvia calendar saved to output/latvia-hockey-cal.ical'",
 		"sync": "npm run scrape && npm run push",
 		"test": "node scripts/scrape.js --test"
 	},
