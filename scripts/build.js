@@ -4,6 +4,17 @@ const path = require("path");
 
 function pad(n) { return String(n).padStart(2, "0"); }
 
+function toUtcIcs(dateStr, timeStr) {
+	// dateStr: YYYYMMDD, timeStr: HHMM, CET = UTC+2 in May
+	const y = dateStr.slice(0,4), mo = dateStr.slice(4,6), d = dateStr.slice(6,8);
+	const h = parseInt(timeStr.slice(0,2)), m = timeStr.slice(2,4);
+	// subtract 2h for CET->UTC
+	let utcH = h - 2;
+	let utcD = parseInt(d);
+	if (utcH < 0) { utcH += 24; utcD -= 1; }
+	return `${y}${mo}${pad(utcD)}T${pad(utcH)}${m}00Z`;
+}
+
 function toUtcIso(dateStr, timeStr) {
 	// dateStr: YYYYMMDD, timeStr: HHMM, CET = UTC+2 in May
 	const y = dateStr.slice(0,4), mo = dateStr.slice(4,6), d = dateStr.slice(6,8);
@@ -29,10 +40,10 @@ function generateIcs(games) {
 	];
 
 	games.forEach((g, i) => {
-		const dtstart = toUtcIso(g.date, g.time);
+		const dtstart = toUtcIcs(g.date, g.time);
 		const endH = parseInt(g.time.slice(0,2)) + 2;
 		const endTime = pad(endH) + g.time.slice(2);
-		const dtend = toUtcIso(g.date, endTime);
+		const dtend = toUtcIcs(g.date, endTime);
 		const round = g.round ? `[${g.round}] ` : "";
 		const summary = g.away
 			? `${round}${g.home} vs ${g.away}`
