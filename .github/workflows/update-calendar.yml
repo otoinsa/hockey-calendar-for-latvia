@@ -2,8 +2,9 @@ name: Update Latvia Hockey Calendar
 
 on:
   schedule:
-    # Run every hour at the top of the hour
-    - cron: '0 * * * *'
+    # Run daily at 3 AM UTC (since games don't change often)
+    # For yearly tournaments, adjust as needed: 0 3 * * * (daily), 0 0 * * 0 (weekly), 0 0 1 * * (monthly)
+    - cron: '0 3 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
