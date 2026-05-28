@@ -22,16 +22,19 @@ async function main() {
 			game.home.includes("Latvia") || game.away.includes("Latvia")
 		);
 
-		// Convert to output format with Zulu times
-		const gamesWithZulu = latviaGames.map(g => ({
-			...g,
-			startTime: toUtcIso(g.date, g.time),
-			endTime: (() => {
-				const endH = parseInt(g.time.slice(0,2)) + 2;
-				const endTime = pad(endH) + g.time.slice(2);
-				return toUtcIso(g.date, endTime);
-			})()
-		}));
+		// Convert to output format with Zulu times only
+		const gamesWithZulu = latviaGames.map(g => {
+			const endH = parseInt(g.time.slice(0,2)) + 2;
+			const endTime = pad(endH) + g.time.slice(2);
+			return {
+				home: g.home,
+				away: g.away,
+				venue: g.venue,
+				...(g.round && { round: g.round }),
+				startTime: toUtcIso(g.date, g.time),
+				endTime: toUtcIso(g.date, endTime)
+			};
+		});
 
 		// Output as JSON to stdout
 		const output = {
