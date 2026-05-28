@@ -1,0 +1,65 @@
+{
+  "generated": "2026-05-28T23:14:08.784Z",
+  "lastUpdated": "2026-05-28T23:14:08.781Z",
+  "hasChanges": false,
+  "totalGames": 8,
+  "games": [
+    {
+      "date": "20260516",
+      "time": "2020",
+      "home": "Switzerland",
+      "away": "Latvia",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260517",
+      "time": "2020",
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260519",
+      "time": "1620",
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260521",
+      "time": "1620",
+      "home": "Finland",
+      "away": "Latvia",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260523",
+      "time": "1220",
+      "home": "USA",
+      "away": "Latvia",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260524",
+      "time": "1620",
+      "home": "Great Britain",
+      "away": "Latvia",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260526",
+      "time": "1220",
+      "home": "Hungary",
+      "away": "Latvia",
+      "venue": "Swiss Life Arena, Zurich"
+    },
+    {
+      "date": "20260528",
+      "time": "2020",
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "BCF Arena, Fribourg",
+      "round": "Quarterfinal"
+    }
+  ]
+}
