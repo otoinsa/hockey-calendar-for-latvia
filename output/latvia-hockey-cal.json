@@ -1,65 +1,441 @@
 {
-  "generated": "2026-05-28T23:28:38.259Z",
-  "lastUpdated": "2026-05-28T23:28:38.242Z",
+  "generated": "2026-05-29T00:05:00.829Z",
+  "lastUpdated": "2026-05-29T00:05:00.546Z",
   "hasChanges": false,
-  "totalGames": 8,
+  "totalGames": 43,
   "games": [
     {
-      "home": "Switzerland",
-      "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-16T18:20:00Z",
-      "endTime": "2026-05-16T20:20:00Z"
-    },
-    {
-      "home": "Germany",
-      "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-17T18:20:00Z",
-      "endTime": "2026-05-17T20:20:00Z"
-    },
-    {
       "home": "Latvia",
-      "away": "Austria",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-19T14:20:00Z",
-      "endTime": "2026-05-19T16:20:00Z"
-    },
-    {
-      "home": "Finland",
-      "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-21T14:20:00Z",
-      "endTime": "2026-05-21T16:20:00Z"
-    },
-    {
-      "home": "USA",
-      "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-23T10:20:00Z",
-      "endTime": "2026-05-23T12:20:00Z"
-    },
-    {
-      "home": "Great Britain",
-      "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-24T14:20:00Z",
-      "endTime": "2026-05-24T16:20:00Z"
-    },
-    {
-      "home": "Hungary",
-      "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-26T10:20:00Z",
-      "endTime": "2026-05-26T12:20:00Z"
+      "away": "France",
+      "venue": "WORLD: Olympic Games - Qualification - Fourth stage",
+      "tournament": "WORLD: Olympic Games - Qualification - Fourth stage",
+      "round": "Qualification",
+      "homeScore": 5,
+      "awayScore": 2,
+      "startTime": "2024-09-01T14:00:00.000Z",
+      "endTime": "2024-09-01T16:00:00.000Z"
     },
     {
       "home": "Norway",
       "away": "Latvia",
-      "venue": "BCF Arena, Fribourg",
+      "venue": "EUROPE: International Tournament (Slovakia)",
+      "tournament": "EUROPE: International Tournament (Slovakia)",
+      "homeScore": 0,
+      "awayScore": 3,
+      "startTime": "2024-12-12T17:00:00.000Z",
+      "endTime": "2024-12-12T19:00:00.000Z"
+    },
+    {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "EUROPE: International Tournament (Slovakia)",
+      "tournament": "EUROPE: International Tournament (Slovakia)",
+      "homeScore": 2,
+      "awayScore": 1,
+      "startTime": "2024-12-13T17:00:00.000Z",
+      "endTime": "2024-12-13T19:00:00.000Z"
+    },
+    {
+      "home": "Austria",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 2,
+      "awayScore": 3,
+      "startTime": "2025-04-04T14:20:00.000Z",
+      "endTime": "2025-04-04T16:20:00.000Z"
+    },
+    {
+      "home": "Austria",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 4,
+      "startTime": "2025-04-05T14:20:00.000Z",
+      "endTime": "2025-04-05T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Finland",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 3,
+      "awayScore": 2,
+      "startTime": "2025-04-09T16:30:00.000Z",
+      "endTime": "2025-04-09T18:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Finland",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 4,
+      "startTime": "2025-04-10T16:30:00.000Z",
+      "endTime": "2025-04-10T18:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Switzerland",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 3,
+      "awayScore": 2,
+      "startTime": "2025-04-24T16:30:00.000Z",
+      "endTime": "2025-04-24T18:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Switzerland",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 2,
+      "awayScore": 4,
+      "startTime": "2025-04-25T16:30:00.000Z",
+      "endTime": "2025-04-25T18:30:00.000Z"
+    },
+    {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 2,
+      "startTime": "2025-05-02T17:00:00.000Z",
+      "endTime": "2025-05-02T19:00:00.000Z"
+    },
+    {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 2,
+      "awayScore": 1,
+      "startTime": "2025-05-03T13:00:00.000Z",
+      "endTime": "2025-05-03T15:00:00.000Z"
+    },
+    {
+      "home": "France",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 4,
+      "startTime": "2025-05-10T18:20:00.000Z",
+      "endTime": "2025-05-10T20:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Canada",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 7,
+      "startTime": "2025-05-11T14:20:00.000Z",
+      "endTime": "2025-05-11T16:20:00.000Z"
+    },
+    {
+      "home": "Slovenia",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 2,
+      "awayScore": 5,
+      "startTime": "2025-05-13T14:20:00.000Z",
+      "endTime": "2025-05-13T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Sweden",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 0,
+      "awayScore": 6,
+      "startTime": "2025-05-14T18:20:00.000Z",
+      "endTime": "2025-05-14T20:20:00.000Z"
+    },
+    {
+      "home": "Finland",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 2,
+      "awayScore": 1,
+      "startTime": "2025-05-17T10:20:00.000Z",
+      "endTime": "2025-05-17T12:20:00.000Z"
+    },
+    {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 5,
+      "startTime": "2025-05-18T18:20:00.000Z",
+      "endTime": "2025-05-18T20:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 6,
+      "startTime": "2025-05-20T10:20:00.000Z",
+      "endTime": "2025-05-20T12:20:00.000Z"
+    },
+    {
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 4,
+      "awayScore": 1,
+      "startTime": "2025-11-06T18:45:00.000Z",
+      "endTime": "2025-11-06T20:45:00.000Z"
+    },
+    {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 4,
+      "awayScore": 1,
+      "startTime": "2025-11-08T10:00:00.000Z",
+      "endTime": "2025-11-08T12:00:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 4,
+      "awayScore": 2,
+      "startTime": "2025-11-09T10:00:00.000Z",
+      "endTime": "2025-11-09T12:00:00.000Z"
+    },
+    {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 0,
+      "awayScore": 4,
+      "startTime": "2025-12-11T17:00:00.000Z",
+      "endTime": "2025-12-11T19:00:00.000Z"
+    },
+    {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 3,
+      "awayScore": 2,
+      "startTime": "2025-12-12T17:00:00.000Z",
+      "endTime": "2025-12-12T19:00:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "USA",
+      "venue": "WORLD: Olympic Games",
+      "tournament": "WORLD: Olympic Games",
+      "homeScore": 1,
+      "awayScore": 5,
+      "startTime": "2026-02-12T20:10:00.000Z",
+      "endTime": "2026-02-12T22:10:00.000Z"
+    },
+    {
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "WORLD: Olympic Games",
+      "tournament": "WORLD: Olympic Games",
+      "homeScore": 3,
+      "awayScore": 4,
+      "startTime": "2026-02-14T11:10:00.000Z",
+      "endTime": "2026-02-14T13:10:00.000Z"
+    },
+    {
+      "home": "Denmark",
+      "away": "Latvia",
+      "venue": "WORLD: Olympic Games",
+      "tournament": "WORLD: Olympic Games",
+      "homeScore": 4,
+      "awayScore": 2,
+      "startTime": "2026-02-15T18:10:00.000Z",
+      "endTime": "2026-02-15T20:10:00.000Z"
+    },
+    {
+      "home": "Sweden",
+      "away": "Latvia",
+      "venue": "WORLD: Olympic Games - Play Offs",
+      "tournament": "WORLD: Olympic Games - Play Offs",
       "round": "Quarterfinal",
-      "startTime": "2026-05-28T18:20:00Z",
-      "endTime": "2026-05-28T20:20:00Z"
+      "homeScore": 5,
+      "awayScore": 1,
+      "startTime": "2026-02-17T20:10:00.000Z",
+      "endTime": "2026-02-17T22:10:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 3,
+      "awayScore": 4,
+      "startTime": "2026-04-08T16:30:00.000Z",
+      "endTime": "2026-04-08T18:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 0,
+      "startTime": "2026-04-09T16:30:00.000Z",
+      "endTime": "2026-04-09T18:30:00.000Z"
+    },
+    {
+      "home": "Finland",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 2,
+      "startTime": "2026-04-22T15:30:00.000Z",
+      "endTime": "2026-04-22T17:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Denmark",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 2,
+      "awayScore": 1,
+      "startTime": "2026-04-23T15:30:00.000Z",
+      "endTime": "2026-04-23T17:30:00.000Z"
+    },
+    {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 5,
+      "startTime": "2026-05-02T15:00:00.000Z",
+      "endTime": "2026-05-02T17:00:00.000Z"
+    },
+    {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 5,
+      "awayScore": 2,
+      "startTime": "2026-05-03T15:00:00.000Z",
+      "endTime": "2026-05-03T17:00:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Norway",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 3,
+      "awayScore": 2,
+      "startTime": "2026-05-06T16:30:00.000Z",
+      "endTime": "2026-05-06T18:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Norway",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 4,
+      "awayScore": 3,
+      "startTime": "2026-05-07T16:30:00.000Z",
+      "endTime": "2026-05-07T18:30:00.000Z"
+    },
+    {
+      "home": "Switzerland",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 4,
+      "awayScore": 2,
+      "startTime": "2026-05-16T18:20:00.000Z",
+      "endTime": "2026-05-16T20:20:00.000Z"
+    },
+    {
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 0,
+      "awayScore": 2,
+      "startTime": "2026-05-17T18:20:00.000Z",
+      "endTime": "2026-05-17T20:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 3,
+      "startTime": "2026-05-19T14:20:00.000Z",
+      "endTime": "2026-05-19T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Finland",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 7,
+      "startTime": "2026-05-21T14:20:00.000Z",
+      "endTime": "2026-05-21T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "USA",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 4,
+      "awayScore": 2,
+      "startTime": "2026-05-23T10:20:00.000Z",
+      "endTime": "2026-05-23T12:20:00.000Z"
+    },
+    {
+      "home": "Great Britain",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 0,
+      "awayScore": 6,
+      "startTime": "2026-05-24T14:20:00.000Z",
+      "endTime": "2026-05-24T16:20:00.000Z"
+    },
+    {
+      "home": "Hungary",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 8,
+      "startTime": "2026-05-26T10:20:00.000Z",
+      "endTime": "2026-05-26T12:20:00.000Z"
+    },
+    {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship - Play Offs",
+      "tournament": "WORLD: World Championship - Play Offs",
+      "round": "Quarterfinal",
+      "homeScore": 2,
+      "awayScore": 0,
+      "startTime": "2026-05-28T18:20:00.000Z",
+      "endTime": "2026-05-28T20:20:00.000Z"
     }
   ]
 }

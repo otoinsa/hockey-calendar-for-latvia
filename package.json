@@ -1,11 +1,12 @@
 {
 	"name": "hockey-calendar-for-latvia",
 	"version": "1.0.0",
-	"description": "IIHF World Championship 2026 — Google Calendar Auto-Sync",
-	"main": "scripts/scrape.js",
+	"description": "Latvia hockey calendar — Flashscore-sourced iCal and JSON",
+	"main": "scripts/build.js",
 	"scripts": {
 		"build": "node scripts/build.js",
-		"test": "npm run build"
+		"test": "npm run build",
+		"dev": "nodemon --watch scripts --watch data --ext js,json scripts/test-server.js"
 	},
 	"keywords": [
 		"hockey",
@@ -18,7 +19,8 @@
 	"engines": {
 		"node": ">=18.0.0"
 	},
-	"dependencies": {
-		"dotenv": "^16.0.3"
+	"dependencies": {},
+	"devDependencies": {
+		"nodemon": "^3.1.14"
 	}
 }

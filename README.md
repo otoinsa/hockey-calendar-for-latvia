@@ -1,6 +1,8 @@
-# IIHF World Championship 2026 — Latvia Hockey Calendar
+# Latvia Hockey Calendar
 
-Generates Latvia-only hockey schedule in both **iCal** and **JSON** formats. Auto-updates daily via GitHub Actions.
+Auto-updating calendar of **every Latvia men's national team game vs another country** — Olympics, World Championship, friendlies, European Cup of Nations, qualification tournaments, and anything else Flashscore lists on the [Latvia team page](https://www.flashscore.com/team/latvia/44JaYkQ4/).
+
+Output is published in **iCal** (subscribe in Apple/Google Calendar) and **JSON** (for apps and scripts). Updated daily via GitHub Actions.
 
 ## 🚀 Quick Start
 
@@ -33,52 +35,122 @@ https://raw.githubusercontent.com/otoinsa/hockey-calendar-for-latvia/main/output
 
 ## 📋 What's Inside
 
-- ✅ **8 Latvia games** extracted from 61 total tournament games
+- ✅ **All Latvia international games** vs other countries (Flashscore is the only source)
 - ✅ **Daily updates** (3 AM UTC) - smart enough to not spam hourly
 - ✅ **Delta detection** - only commits when games actually change
 - ✅ **Dual formats** - iCal for calendars + JSON for apps
 - ✅ **ISO 8601 Zulu times** - standardized, easy to parse
 - ✅ **Persistent cache** - tracks change history
+- ✅ **Scores included** when Flashscore marks a game finished
 
-## 🏒 The 8 Latvia Games
+### Competitions covered
 
-| Date | Time (UTC) | Opponent | Venue |
-|------|-----------|----------|-------|
-| May 16 | 18:20 | Switzerland | Swiss Life Arena, Zurich |
-| May 17 | 18:20 | Germany | Swiss Life Arena, Zurich |
-| May 19 | 14:20 | Austria | Swiss Life Arena, Zurich |
-| May 21 | 14:20 | Finland | Swiss Life Arena, Zurich |
-| May 23 | 10:20 | USA | Swiss Life Arena, Zurich |
-| May 24 | 14:20 | Great Britain | Swiss Life Arena, Zurich |
-| May 26 | 10:20 | Hungary | Swiss Life Arena, Zurich |
-| May 28 | 18:20 | Norway (QF) | BCF Arena, Fribourg |
+Olympic Games (and playoffs / qualification), IIHF World Championship (and playoffs), Friendly Internationals, European Cup of Nations, invitational tournaments — whatever Flashscore has on the Latvia team page. No hardcoded schedules. No API key.
 
 ## 🔄 How It Works
 
-1. **`scripts/cache.js`** - Manages game caching + delta detection
-2. **`scripts/scrape-latvia.js`** - Generates iCal format
-3. **`scripts/scrape-latvia-json.js`** - Generates clean JSON with Zulu times
-4. **`.github/workflows/update-calendar.yml`** - Runs daily, auto-commits if changed
+```
+Flashscore (results + fixtures)
+  → scripts/fetch-flashscore.js   parse embedded feed data
+  → scripts/cache.js              delta detection, games-cache.json
+  → scripts/build.js              write iCal + JSON
+  → output/
+  → GitHub Actions (daily cron)
+```
+
+1. **`scripts/fetch-flashscore.js`** - Fetches all Latvia vs country games + scores from Flashscore
+2. **`scripts/cache.js`** - Caches games and delta detection
+3. **`scripts/build.js`** - Generates iCal and JSON from cached games
+4. **`scripts/test-server.js`** - Local dev server for testing iCal output (run with `npm run dev`)
+5. **`.github/workflows/update-calendar.yml`** - Runs daily at 3 AM UTC, auto-commits if changed
 
 ## 📦 JSON Output Example
 
 ```json
 {
-  "generated": "2026-05-28T23:17:39.589Z",
-  "lastUpdated": "2026-05-28T23:17:39.587Z",
+  "generated": "2026-05-29T00:05:00.829Z",
+  "lastUpdated": "2026-05-29T00:05:00.546Z",
   "hasChanges": false,
-  "totalGames": 8,
+  "totalGames": 43,
   "games": [
     {
-      "home": "Switzerland",
+      "home": "Latvia",
+      "away": "Norway",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 4,
+      "awayScore": 3,
+      "startTime": "2026-05-07T16:30:00.000Z",
+      "endTime": "2026-05-07T18:30:00.000Z"
+    },
+    {
+      "home": "Norway",
       "away": "Latvia",
-      "venue": "Swiss Life Arena, Zurich",
-      "startTime": "2026-05-16T18:20:00Z",
-      "endTime": "2026-05-16T20:20:00Z"
+      "venue": "WORLD: World Championship - Play Offs",
+      "tournament": "WORLD: World Championship - Play Offs",
+      "round": "Quarterfinal",
+      "homeScore": 2,
+      "awayScore": 0,
+      "startTime": "2026-05-28T18:20:00.000Z",
+      "endTime": "2026-05-28T20:20:00.000Z"
     }
   ]
 }
 ```
+
+Game count varies — Flashscore returns whatever is on the Latvia team page (past and upcoming).
+
+## 🛠️ Development
+
+### Local Testing
+Start the dev server to test iCal output locally:
+```bash
+npm install
+npm run dev
+```
+
+Then subscribe to `http://localhost:3000/latvia-hockey-cal.ical` in your calendar app for instant testing.
+
+**Available endpoints:**
+- `http://localhost:3000/latvia-hockey-cal.ical` - iCal format (displays as text)
+- `http://localhost:3000/latvia-hockey-cal.json` - JSON format
+- `http://localhost:3000/rebuild` - Trigger rebuild
+
+**Features:**
+- Auto-restarts on file changes in `scripts/` and `data/`
+- Always serves fresh files from `output/` directory
+- No caching for instant feedback
+
+### Building
+Generate the calendar files manually:
+```bash
+npm run build
+```
+
+This creates:
+- `output/latvia-hockey-cal.ical` - iCal format with proper RFC 5545 compliance
+- `output/latvia-hockey-cal.json` - JSON format with ISO 8601 timestamps
+
+---
+
+## 📝 Technical Notes
+
+### iCal Format
+- Uses RFC 5545 compliant format (`YYYYMMDDTHHMMSSZ` for UTC times)
+- No `X-WR-TIMEZONE` header to avoid timezone conflicts
+- Proper CRLF line endings for maximum compatibility
+- Scores appear in event title when available
+
+### Game Data
+- **Source:** [Flashscore Latvia team page](https://www.flashscore.com/team/latvia/44JaYkQ4/) (embedded `cjs.initialFeeds` data from results + fixtures pages)
+- Fetches on each build via `scripts/fetch-flashscore.js` — no separate API key; same data the website uses
+- **All international games** where Latvia plays another country (friendlies, Olympics, World Championship, European Cup, qualification, invitational tournaments)
+- On fetch failure, falls back to last cached Flashscore data
+
+### Automation
+- GitHub Actions runs daily at 3 AM UTC
+- Only commits when game data actually changes (delta detection)
+- Smart caching prevents unnecessary updates
 
 ---
 
@@ -97,5 +169,3 @@ This project was **painstakingly built using cheap LLMs**, navigating through:
 Every commit represents hours of "let me try this" → "oh that doesn't work" → "wait, does the API even support that?" → "let me refactor everything."
 
 Use this as evidence that even with budget models, persistence beats perfection. 🚀
-
-

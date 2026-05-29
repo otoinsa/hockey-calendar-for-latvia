@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const https = require("https");
+const { fetchLatviaGamesFromFlashscore } = require("./fetch-flashscore");
 
 const CACHE_FILE = path.join(__dirname, "../data/games-cache.json");
 const DATA_DIR = path.join(__dirname, "../data");
@@ -26,88 +26,6 @@ function readCache() {
 function writeCache(cache) {
 	ensureDataDir();
 	fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2), "utf-8");
-}
-
-function fetch(url) {
-	return new Promise((resolve, reject) => {
-		https.get(url, { headers: { "User-Agent": "Mozilla/5.0" } }, (res) => {
-			let data = "";
-			res.on("data", (chunk) => (data += chunk));
-			res.on("end", () => resolve({ status: res.statusCode, body: data }));
-		}).on("error", reject);
-	});
-}
-
-function getDefaultGames() {
-	// Official 2026 IIHF tournament schedule
-	return [
-		// Group stage - Group A (Zurich, Swiss Life Arena)
-		{ date: "20260515", time: "1620", home: "Finland", away: "Hungary", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260515", time: "2020", home: "USA", away: "Germany", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260516", time: "1620", home: "Hungary", away: "Finland", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260516", time: "2020", home: "Switzerland", away: "Latvia", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260517", time: "1220", home: "Great Britain", away: "USA", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260517", time: "2020", home: "Germany", away: "Latvia", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260518", time: "1620", home: "Finland", away: "USA", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260518", time: "2020", home: "Germany", away: "Switzerland", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260519", time: "1620", home: "Latvia", away: "Austria", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260519", time: "2020", home: "Hungary", away: "Great Britain", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260520", time: "1620", home: "Austria", away: "Switzerland", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260520", time: "2020", home: "USA", away: "Germany", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260521", time: "1620", home: "Finland", away: "Latvia", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260521", time: "2020", home: "Switzerland", away: "Great Britain", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260522", time: "1620", home: "Germany", away: "Hungary", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260522", time: "2020", home: "Finland", away: "Great Britain", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260523", time: "1220", home: "USA", away: "Latvia", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260523", time: "1620", home: "Switzerland", away: "Hungary", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260523", time: "2020", home: "Austria", away: "Germany", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260524", time: "1620", home: "Great Britain", away: "Latvia", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260524", time: "2020", home: "Finland", away: "Austria", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260525", time: "1620", home: "USA", away: "Hungary", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260525", time: "2020", home: "Germany", away: "Great Britain", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260526", time: "1220", home: "Hungary", away: "Latvia", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260526", time: "1620", home: "USA", away: "Austria", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260526", time: "2020", home: "Switzerland", away: "Finland", venue: "Swiss Life Arena, Zurich" },
-
-		{ date: "20260515", time: "1220", home: "Sweden", away: "Canada", venue: "BCF Arena, Fribourg" },
-		{ date: "20260515", time: "1620", home: "Slovakia", away: "Norway", venue: "BCF Arena, Fribourg" },
-		{ date: "20260516", time: "1220", home: "Great Britain", away: "Austria", venue: "Swiss Life Arena, Zurich" },
-		{ date: "20260516", time: "2020", home: "Slovenia", away: "Czech Republic", venue: "BCF Arena, Fribourg" },
-		{ date: "20260517", time: "1220", home: "Italy", away: "Slovakia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260517", time: "1620", home: "Sweden", away: "Denmark", venue: "BCF Arena, Fribourg" },
-		{ date: "20260517", time: "2020", home: "Norway", away: "Slovenia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260518", time: "1620", home: "Canada", away: "Denmark", venue: "BCF Arena, Fribourg" },
-		{ date: "20260518", time: "2020", home: "Czech Republic", away: "Sweden", venue: "BCF Arena, Fribourg" },
-		{ date: "20260519", time: "1620", home: "Italy", away: "Norway", venue: "BCF Arena, Fribourg" },
-		{ date: "20260519", time: "2020", home: "Slovenia", away: "Slovakia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260520", time: "1620", home: "Czech Republic", away: "Italy", venue: "BCF Arena, Fribourg" },
-		{ date: "20260520", time: "2020", home: "Sweden", away: "Slovenia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260521", time: "1220", home: "Norway", away: "Canada", venue: "BCF Arena, Fribourg" },
-		{ date: "20260521", time: "2020", home: "Denmark", away: "Slovakia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260522", time: "1620", home: "Canada", away: "Slovenia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260522", time: "2020", home: "Italy", away: "Sweden", venue: "BCF Arena, Fribourg" },
-		{ date: "20260523", time: "1220", home: "Denmark", away: "Slovenia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260523", time: "1620", home: "Slovakia", away: "Czech Republic", venue: "BCF Arena, Fribourg" },
-		{ date: "20260523", time: "2020", home: "Sweden", away: "Norway", venue: "BCF Arena, Fribourg" },
-		{ date: "20260524", time: "1620", home: "Denmark", away: "Italy", venue: "BCF Arena, Fribourg" },
-		{ date: "20260524", time: "2020", home: "Canada", away: "Slovakia", venue: "BCF Arena, Fribourg" },
-		{ date: "20260525", time: "1620", home: "Czech Republic", away: "Norway", venue: "BCF Arena, Fribourg" },
-		{ date: "20260525", time: "2020", home: "Slovenia", away: "Italy", venue: "BCF Arena, Fribourg" },
-		{ date: "20260526", time: "1220", home: "Norway", away: "Denmark", venue: "BCF Arena, Fribourg" },
-		{ date: "20260526", time: "1620", home: "Slovakia", away: "Sweden", venue: "BCF Arena, Fribourg" },
-		{ date: "20260526", time: "2020", home: "Czech Republic", away: "Canada", venue: "BCF Arena, Fribourg" },
-
-		{ date: "20260528", time: "1620", home: "Finland", away: "Czech Republic", venue: "Swiss Life Arena, Zurich", round: "Quarterfinal" },
-		{ date: "20260528", time: "1620", home: "Canada", away: "USA", venue: "BCF Arena, Fribourg", round: "Quarterfinal" },
-		{ date: "20260528", time: "2020", home: "Switzerland", away: "Sweden", venue: "Swiss Life Arena, Zurich", round: "Quarterfinal" },
-		{ date: "20260528", time: "2020", home: "Norway", away: "Latvia", venue: "BCF Arena, Fribourg", round: "Quarterfinal" },
-
-		{ date: "20260530", time: "1620", home: "SF1 Winner", away: "SF2 Winner", venue: "Swiss Life Arena, Zurich", round: "Semifinal" },
-		{ date: "20260530", time: "2020", home: "SF3 Winner", away: "SF4 Winner", venue: "Swiss Life Arena, Zurich", round: "Semifinal" },
-
-		{ date: "20260531", time: "1620", home: "Bronze Medal Game", away: "", venue: "Swiss Life Arena, Zurich", round: "Bronze Medal" },
-		{ date: "20260531", time: "2020", home: "Gold Medal Game", away: "", venue: "Swiss Life Arena, Zurich", round: "Gold Medal" },
-	];
 }
 
 function calculateDeltas(oldGames, newGames) {
@@ -140,8 +58,13 @@ async function getGamesWithDeltaCheck() {
 	const cache = readCache();
 	const now = new Date().toISOString();
 
-	// Try to fetch new data
-	let newGames = getDefaultGames();
+	let newGames = []
+	try {
+		newGames = await fetchLatviaGamesFromFlashscore()
+	} catch (error) {
+		console.error("Flashscore fetch failed, using cached games:", error.message)
+		newGames = (cache.games || []).map((g) => ({ ...g }))
+	}
 
 	// Calculate deltas
 	const deltas = calculateDeltas(cache.games || [], newGames);
@@ -165,4 +88,4 @@ async function getGamesWithDeltaCheck() {
 	};
 }
 
-module.exports = { getGamesWithDeltaCheck, readCache, getDefaultGames };
+module.exports = { getGamesWithDeltaCheck, readCache };

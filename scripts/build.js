@@ -4,26 +4,33 @@ const path = require("path");
 
 function pad(n) { return String(n).padStart(2, "0"); }
 
-function toUtcIcs(dateStr, timeStr) {
-	// dateStr: YYYYMMDD, timeStr: HHMM, CET = UTC+2 in May
-	const y = dateStr.slice(0,4), mo = dateStr.slice(4,6), d = dateStr.slice(6,8);
-	const h = parseInt(timeStr.slice(0,2)), m = timeStr.slice(2,4);
-	// subtract 2h for CET->UTC
-	let utcH = h - 2;
-	let utcD = parseInt(d);
-	if (utcH < 0) { utcH += 24; utcD -= 1; }
-	return `${y}${mo}${pad(utcD)}T${pad(utcH)}${m}00Z`;
+function formatSummary(g) {
+	const round = g.round ? `[${g.round}] ` : ""
+	if (g.homeScore != null && g.awayScore != null) {
+		return `${round}${g.home} ${g.homeScore} - ${g.awayScore} ${g.away}`
+	}
+	return g.away
+		? `${round}${g.home} vs ${g.away}`
+		: `${round}${g.home}`
 }
 
-function toUtcIso(dateStr, timeStr) {
-	// dateStr: YYYYMMDD, timeStr: HHMM, CET = UTC+2 in May
-	const y = dateStr.slice(0,4), mo = dateStr.slice(4,6), d = dateStr.slice(6,8);
-	const h = parseInt(timeStr.slice(0,2)), m = timeStr.slice(2,4);
-	// subtract 2h for CET->UTC
-	let utcH = h - 2;
-	let utcD = parseInt(d);
-	if (utcH < 0) { utcH += 24; utcD -= 1; }
-	return `${y}-${mo}-${pad(utcD)}T${pad(utcH)}:${m}:00Z`;
+function utcIsoToIcs(iso) {
+	return iso.replace(/[-:]/g, "").replace(/\.\d{3}/, "")
+}
+
+function addHoursToIso(iso, hours) {
+	const d = new Date(iso)
+	d.setUTCHours(d.getUTCHours() + hours)
+	return d.toISOString()
+}
+
+function getStartEnd(game) {
+	if (!game.startUtc) {
+		throw new Error(`Game missing startUtc from Flashscore: ${game.home} vs ${game.away}`)
+	}
+	const startIso = game.startUtc
+	const endIso = addHoursToIso(startIso, 2)
+	return { startIso, endIso, startIcs: utcIsoToIcs(startIso), endIcs: utcIsoToIcs(endIso) }
 }
 
 function generateIcs(games) {
@@ -31,29 +38,23 @@ function generateIcs(games) {
 	let cal = [
 		"BEGIN:VCALENDAR",
 		"VERSION:2.0",
-		"PRODID:-//IIHF WM 2026//EN",
+		"PRODID:-//Latvia Hockey Calendar//EN",
 		"CALSCALE:GREGORIAN",
 		"METHOD:PUBLISH",
-		"X-WR-CALNAME:Latvia - IIHF World Championship 2026",
-		"X-WR-CALDESC:2026 IIHF Ice Hockey World Championship - Latvia Games Only",
+		"X-WR-CALNAME:Latvia National Hockey Team",
+		"X-WR-CALDESC:All Latvia international games vs other countries",
 	];
 
 	games.forEach((g, i) => {
-		const dtstart = toUtcIcs(g.date, g.time);
-		const endH = parseInt(g.time.slice(0,2)) + 2;
-		const endTime = pad(endH) + g.time.slice(2);
-		const dtend = toUtcIcs(g.date, endTime);
-		const round = g.round ? `[${g.round}] ` : "";
-		const summary = g.away
-			? `${round}${g.home} vs ${g.away}`
-			: `${round}${g.home}`;
+		const { startIcs, endIcs } = getStartEnd(g)
+		const summary = formatSummary(g);
 		const uid = `iihf2026-${g.date}-${i}@iihf-cal`;
 
 		cal.push("BEGIN:VEVENT");
 		cal.push(`UID:${uid}`);
 		cal.push(`DTSTAMP:${now}`);
-		cal.push(`DTSTART:${dtstart}`);
-		cal.push(`DTEND:${dtend}`);
+		cal.push(`DTSTART:${startIcs}`);
+		cal.push(`DTEND:${endIcs}`);
 		cal.push(`SUMMARY:${summary}`);
 		cal.push(`LOCATION:${g.venue}`);
 		cal.push("END:VEVENT");
@@ -68,15 +69,17 @@ function generateJson(games, metadata) {
 	const endTime = pad(endH) + (games[0]?.time.slice(2) || "00");
 
 	const gamesWithZulu = games.map(g => {
-		const endH = parseInt(g.time.slice(0,2)) + 2;
-		const endTime = pad(endH) + g.time.slice(2);
+		const { startIso, endIso } = getStartEnd(g)
 		return {
 			home: g.home,
 			away: g.away,
 			venue: g.venue,
+			...(g.tournament && { tournament: g.tournament }),
 			...(g.round && { round: g.round }),
-			startTime: toUtcIso(g.date, g.time),
-			endTime: toUtcIso(g.date, endTime)
+			...(g.homeScore != null && { homeScore: g.homeScore }),
+			...(g.awayScore != null && { awayScore: g.awayScore }),
+			startTime: startIso,
+			endTime: endIso
 		};
 	});
 
