@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-04T07:25:04.065Z",
-  "lastUpdated": "2026-06-04T07:25:01.618Z",
-  "hasChanges": false,
-  "totalGames": 43,
+  "generated": "2026-06-05T07:09:06.826Z",
+  "lastUpdated": "2026-06-05T07:09:05.082Z",
+  "hasChanges": true,
+  "totalGames": 50,
   "games": [
     {
       "home": "Latvia",
@@ -436,6 +436,62 @@
       "awayScore": 0,
       "startTime": "2026-05-28T18:20:00.000Z",
       "endTime": "2026-05-28T20:20:00.000Z"
+    },
+    {
+      "home": "Finland",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
+    },
+    {
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Slovenia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Ukraine",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
+    },
+    {
+      "home": "Sweden",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
+    },
+    {
+      "home": "Switzerland",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "startTime": "2027-05-14T14:20:00.000Z",
+      "endTime": "2027-05-14T16:20:00.000Z"
     }
   ]
 }
