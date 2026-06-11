@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-10T07:10:09.176Z",
-  "lastUpdated": "2026-06-10T07:10:07.210Z",
+  "generated": "2026-06-11T08:04:38.065Z",
+  "lastUpdated": "2026-06-11T08:04:36.919Z",
   "hasChanges": true,
   "totalGames": 49,
   "games": [
@@ -307,6 +307,16 @@
       "endTime": "2026-04-22T17:30:00.000Z"
     },
     {
+      "home": "Latvia",
+      "away": "Denmark",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 2,
+      "awayScore": 1,
+      "startTime": "2026-04-23T15:30:00.000Z",
+      "endTime": "2026-04-23T17:30:00.000Z"
+    },
+    {
       "home": "Slovakia",
       "away": "Latvia",
       "venue": "WORLD: Friendly International",
@@ -454,14 +464,6 @@
     {
       "home": "Latvia",
       "away": "Slovenia",
-      "venue": "WORLD: World Championship",
-      "tournament": "WORLD: World Championship",
-      "startTime": "2027-05-14T14:20:00.000Z",
-      "endTime": "2027-05-14T16:20:00.000Z"
-    },
-    {
-      "home": "Latvia",
-      "away": "Ukraine",
       "venue": "WORLD: World Championship",
       "tournament": "WORLD: World Championship",
       "startTime": "2027-05-14T14:20:00.000Z",
