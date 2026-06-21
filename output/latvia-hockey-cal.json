@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-20T07:01:42.511Z",
-  "lastUpdated": "2026-06-20T07:01:40.838Z",
+  "generated": "2026-06-21T08:01:02.760Z",
+  "lastUpdated": "2026-06-21T08:01:00.728Z",
   "hasChanges": true,
   "totalGames": 50,
   "games": [
@@ -150,8 +150,6 @@
       "away": "Sweden",
       "venue": "WORLD: World Championship",
       "tournament": "WORLD: World Championship",
-      "homeScore": 0,
-      "awayScore": 6,
       "startTime": "2025-05-14T18:20:00.000Z",
       "endTime": "2025-05-14T20:20:00.000Z"
     },
