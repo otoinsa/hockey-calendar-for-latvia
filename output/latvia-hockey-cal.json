@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-21T08:01:02.760Z",
-  "lastUpdated": "2026-06-21T08:01:00.728Z",
+  "generated": "2026-06-22T09:10:54.622Z",
+  "lastUpdated": "2026-06-22T09:10:53.351Z",
   "hasChanges": true,
-  "totalGames": 50,
+  "totalGames": 49,
   "games": [
     {
       "home": "Latvia",
@@ -150,6 +150,8 @@
       "away": "Sweden",
       "venue": "WORLD: World Championship",
       "tournament": "WORLD: World Championship",
+      "homeScore": 0,
+      "awayScore": 6,
       "startTime": "2025-05-14T18:20:00.000Z",
       "endTime": "2025-05-14T20:20:00.000Z"
     },
@@ -446,14 +448,6 @@
     {
       "home": "Germany",
       "away": "Latvia",
-      "venue": "WORLD: World Championship",
-      "tournament": "WORLD: World Championship",
-      "startTime": "2027-05-14T14:20:00.000Z",
-      "endTime": "2027-05-14T16:20:00.000Z"
-    },
-    {
-      "home": "Latvia",
-      "away": "Austria",
       "venue": "WORLD: World Championship",
       "tournament": "WORLD: World Championship",
       "startTime": "2027-05-14T14:20:00.000Z",
