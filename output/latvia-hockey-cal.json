@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-30T06:56:29.065Z",
-  "lastUpdated": "2026-06-30T06:56:27.789Z",
+  "generated": "2026-07-01T07:12:30.739Z",
+  "lastUpdated": "2026-07-01T07:12:28.447Z",
   "hasChanges": true,
   "totalGames": 49,
   "games": [
@@ -30,6 +30,8 @@
       "away": "Latvia",
       "venue": "EUROPE: International Tournament (Slovakia)",
       "tournament": "EUROPE: International Tournament (Slovakia)",
+      "homeScore": 2,
+      "awayScore": 1,
       "startTime": "2024-12-13T17:00:00.000Z",
       "endTime": "2024-12-13T19:00:00.000Z"
     },
@@ -104,6 +106,16 @@
       "endTime": "2025-05-02T19:00:00.000Z"
     },
     {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 2,
+      "awayScore": 1,
+      "startTime": "2025-05-03T13:00:00.000Z",
+      "endTime": "2025-05-03T15:00:00.000Z"
+    },
+    {
       "home": "France",
       "away": "Latvia",
       "venue": "WORLD: World Championship",
@@ -172,16 +184,6 @@
       "awayScore": 6,
       "startTime": "2025-05-20T10:20:00.000Z",
       "endTime": "2025-05-20T12:20:00.000Z"
-    },
-    {
-      "home": "Germany",
-      "away": "Latvia",
-      "venue": "EUROPE: European Cup of Nations",
-      "tournament": "EUROPE: European Cup of Nations",
-      "homeScore": 4,
-      "awayScore": 1,
-      "startTime": "2025-11-06T18:45:00.000Z",
-      "endTime": "2025-11-06T20:45:00.000Z"
     },
     {
       "home": "Slovakia",
