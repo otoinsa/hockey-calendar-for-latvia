@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-01T07:12:30.739Z",
-  "lastUpdated": "2026-07-01T07:12:28.447Z",
+  "generated": "2026-07-02T06:41:30.182Z",
+  "lastUpdated": "2026-07-02T06:41:28.746Z",
   "hasChanges": true,
-  "totalGames": 49,
+  "totalGames": 50,
   "games": [
     {
       "home": "Latvia",
@@ -184,6 +184,16 @@
       "awayScore": 6,
       "startTime": "2025-05-20T10:20:00.000Z",
       "endTime": "2025-05-20T12:20:00.000Z"
+    },
+    {
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 4,
+      "awayScore": 1,
+      "startTime": "2025-11-06T18:45:00.000Z",
+      "endTime": "2025-11-06T20:45:00.000Z"
     },
     {
       "home": "Slovakia",
