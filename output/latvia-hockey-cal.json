@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-15T05:31:23.079Z",
-  "lastUpdated": "2026-07-15T05:31:20.936Z",
+  "generated": "2026-07-16T05:40:52.999Z",
+  "lastUpdated": "2026-07-16T05:40:51.341Z",
   "hasChanges": true,
-  "totalGames": 50,
+  "totalGames": 49,
   "games": [
     {
       "home": "Latvia",
@@ -156,7 +156,7 @@
       "endTime": "2025-05-14T20:20:00.000Z"
     },
     {
-      "home": "Finland��FH÷Finland",
+      "home": "Finland",
       "away": "Latvia",
       "venue": "WORLD: World Championship",
       "tournament": "WORLD: World Championship",
@@ -355,16 +355,6 @@
       "awayScore": 3,
       "startTime": "2026-05-07T16:30:00.000Z",
       "endTime": "2026-05-07T18:30:00.000Z"
-    },
-    {
-      "home": "Switzerland",
-      "away": "Latvia",
-      "venue": "WORLD: World Championship",
-      "tournament": "WORLD: World Championship",
-      "homeScore": 4,
-      "awayScore": 2,
-      "startTime": "2026-05-16T18:20:00.000Z",
-      "endTime": "2026-05-16T20:20:00.000Z"
     },
     {
       "home": "Germany",
