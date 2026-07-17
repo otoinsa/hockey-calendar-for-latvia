@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-16T05:40:52.999Z",
-  "lastUpdated": "2026-07-16T05:40:51.341Z",
+  "generated": "2026-07-17T05:42:41.044Z",
+  "lastUpdated": "2026-07-17T05:42:39.812Z",
   "hasChanges": true,
   "totalGames": 49,
   "games": [
@@ -64,16 +64,6 @@
       "awayScore": 2,
       "startTime": "2025-04-09T16:30:00.000Z",
       "endTime": "2025-04-09T18:30:00.000Z"
-    },
-    {
-      "home": "Latvia",
-      "away": "Finland",
-      "venue": "WORLD: Friendly International",
-      "tournament": "WORLD: Friendly International",
-      "homeScore": 1,
-      "awayScore": 4,
-      "startTime": "2025-04-10T16:30:00.000Z",
-      "endTime": "2025-04-10T18:30:00.000Z"
     },
     {
       "home": "Latvia",
@@ -355,6 +345,16 @@
       "awayScore": 3,
       "startTime": "2026-05-07T16:30:00.000Z",
       "endTime": "2026-05-07T18:30:00.000Z"
+    },
+    {
+      "home": "Switzerland",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 4,
+      "awayScore": 2,
+      "startTime": "2026-05-16T18:20:00.000Z",
+      "endTime": "2026-05-16T20:20:00.000Z"
     },
     {
       "home": "Germany",
