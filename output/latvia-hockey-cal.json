@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-22T05:50:41.241Z",
-  "lastUpdated": "2026-07-22T05:50:39.652Z",
+  "generated": "2026-07-23T05:54:03.921Z",
+  "lastUpdated": "2026-07-23T05:54:02.052Z",
   "hasChanges": true,
-  "totalGames": 49,
+  "totalGames": 50,
   "games": [
     {
       "home": "Latvia",
@@ -64,6 +64,16 @@
       "awayScore": 2,
       "startTime": "2025-04-09T16:30:00.000Z",
       "endTime": "2025-04-09T18:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Finland",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 4,
+      "startTime": "2025-04-10T16:30:00.000Z",
+      "endTime": "2025-04-10T18:30:00.000Z"
     },
     {
       "home": "Latvia",
@@ -240,8 +250,6 @@
       "away": "Latvia",
       "venue": "WORLD: Olympic Games",
       "tournament": "WORLD: Olympic Games",
-      "homeScore": 3,
-      "awayScore": 4,
       "startTime": "2026-02-14T11:10:00.000Z",
       "endTime": "2026-02-14T13:10:00.000Z"
     },
