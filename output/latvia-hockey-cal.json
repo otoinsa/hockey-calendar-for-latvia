@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-02T05:57:44.256Z",
-  "lastUpdated": "2026-08-02T05:57:42.185Z",
+  "generated": "2026-08-03T06:22:54.392Z",
+  "lastUpdated": "2026-08-03T06:22:52.957Z",
   "hasChanges": true,
-  "totalGames": 50,
+  "totalGames": 49,
   "games": [
     {
       "home": "Latvia",
@@ -305,16 +305,6 @@
       "awayScore": 2,
       "startTime": "2026-04-22T15:30:00.000Z",
       "endTime": "2026-04-22T17:30:00.000Z"
-    },
-    {
-      "home": "Latvia",
-      "away": "Denmark",
-      "venue": "WORLD: Friendly International",
-      "tournament": "WORLD: Friendly International",
-      "homeScore": 2,
-      "awayScore": 1,
-      "startTime": "2026-04-23T15:30:00.000Z",
-      "endTime": "2026-04-23T17:30:00.000Z"
     },
     {
       "home": "Slovakia",
