@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-04T05:46:18.405Z",
-  "lastUpdated": "2026-08-04T05:46:16.997Z",
+  "generated": "2026-08-05T05:46:02.495Z",
+  "lastUpdated": "2026-08-05T05:46:00.156Z",
   "hasChanges": true,
-  "totalGames": 50,
+  "totalGames": 49,
   "games": [
     {
       "home": "Latvia",
@@ -275,16 +275,6 @@
       "awayScore": 1,
       "startTime": "2026-02-17T20:10:00.000Z",
       "endTime": "2026-02-17T22:10:00.000Z"
-    },
-    {
-      "home": "Latvia",
-      "away": "Austria",
-      "venue": "WORLD: Friendly International",
-      "tournament": "WORLD: Friendly International",
-      "homeScore": 3,
-      "awayScore": 4,
-      "startTime": "2026-04-08T16:30:00.000Z",
-      "endTime": "2026-04-08T18:30:00.000Z"
     },
     {
       "home": "Latvia",
