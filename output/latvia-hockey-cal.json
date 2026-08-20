@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-19T03:45:50.226Z",
-  "lastUpdated": "2026-08-19T03:45:48.439Z",
+  "generated": "2026-08-20T03:45:48.328Z",
+  "lastUpdated": "2026-08-20T03:45:46.164Z",
   "hasChanges": true,
-  "totalGames": 50,
+  "totalGames": 53,
   "games": [
     {
       "home": "Latvia",
@@ -436,6 +436,30 @@
       "awayScore": 0,
       "startTime": "2026-05-28T18:20:00.000Z",
       "endTime": "2026-05-28T20:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Slovakia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "startTime": "2026-11-05T15:15:00.000Z",
+      "endTime": "2026-11-05T17:15:00.000Z"
+    },
+    {
+      "home": "Germany",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "startTime": "2026-11-07T17:30:00.000Z",
+      "endTime": "2026-11-07T19:30:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Austria",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "startTime": "2026-11-08T10:00:00.000Z",
+      "endTime": "2026-11-08T12:00:00.000Z"
     },
     {
       "home": "Finland",
