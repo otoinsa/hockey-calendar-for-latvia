@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-26T03:52:49.711Z",
-  "lastUpdated": "2026-08-26T03:52:47.605Z",
+  "generated": "2026-08-27T13:50:19.252Z",
+  "lastUpdated": "2026-08-27T13:50:15.774Z",
   "hasChanges": true,
   "totalGames": 53,
   "games": [
@@ -200,8 +200,6 @@
       "away": "Latvia",
       "venue": "EUROPE: European Cup of Nations",
       "tournament": "EUROPE: European Cup of Nations",
-      "homeScore": 4,
-      "awayScore": 1,
       "startTime": "2025-11-08T10:00:00.000Z",
       "endTime": "2025-11-08T12:00:00.000Z"
     },
