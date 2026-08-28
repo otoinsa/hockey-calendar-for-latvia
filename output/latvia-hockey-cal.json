@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-27T13:50:19.252Z",
-  "lastUpdated": "2026-08-27T13:50:15.774Z",
+  "generated": "2026-08-28T14:56:24.521Z",
+  "lastUpdated": "2026-08-28T14:56:22.764Z",
   "hasChanges": true,
-  "totalGames": 53,
+  "totalGames": 52,
   "games": [
     {
       "home": "Latvia",
@@ -200,6 +200,8 @@
       "away": "Latvia",
       "venue": "EUROPE: European Cup of Nations",
       "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 4,
+      "awayScore": 1,
       "startTime": "2025-11-08T10:00:00.000Z",
       "endTime": "2025-11-08T12:00:00.000Z"
     },
@@ -363,16 +365,6 @@
       "awayScore": 2,
       "startTime": "2026-05-16T18:20:00.000Z",
       "endTime": "2026-05-16T20:20:00.000Z"
-    },
-    {
-      "home": "Germany",
-      "away": "Latvia",
-      "venue": "WORLD: World Championship",
-      "tournament": "WORLD: World Championship",
-      "homeScore": 0,
-      "awayScore": 2,
-      "startTime": "2026-05-17T18:20:00.000Z",
-      "endTime": "2026-05-17T20:20:00.000Z"
     },
     {
       "home": "Latvia",
