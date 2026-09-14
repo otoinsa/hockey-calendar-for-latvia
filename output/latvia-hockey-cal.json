@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-13T08:02:18.477Z",
-  "lastUpdated": "2026-09-13T08:02:16.873Z",
+  "generated": "2026-09-14T08:36:02.447Z",
+  "lastUpdated": "2026-09-14T08:36:00.762Z",
   "hasChanges": true,
-  "totalGames": 52,
+  "totalGames": 53,
   "games": [
     {
       "home": "Latvia",
@@ -415,6 +415,16 @@
       "awayScore": 6,
       "startTime": "2026-05-24T14:20:00.000Z",
       "endTime": "2026-05-24T16:20:00.000Z"
+    },
+    {
+      "home": "Hungary",
+      "away": "Latvia",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 8,
+      "startTime": "2026-05-26T10:20:00.000Z",
+      "endTime": "2026-05-26T12:20:00.000Z"
     },
     {
       "home": "Norway",
