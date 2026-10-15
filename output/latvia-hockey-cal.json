@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-14T08:25:51.630Z",
-  "lastUpdated": "2026-10-14T08:25:50.041Z",
+  "generated": "2026-10-15T08:01:26.356Z",
+  "lastUpdated": "2026-10-15T08:01:24.864Z",
   "hasChanges": true,
-  "totalGames": 52,
+  "totalGames": 53,
   "games": [
     {
       "home": "Latvia",
@@ -144,6 +144,16 @@
       "awayScore": 5,
       "startTime": "2025-05-13T14:20:00.000Z",
       "endTime": "2025-05-13T16:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Sweden",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 0,
+      "awayScore": 6,
+      "startTime": "2025-05-14T18:20:00.000Z",
+      "endTime": "2025-05-14T20:20:00.000Z"
     },
     {
       "home": "Finland",
