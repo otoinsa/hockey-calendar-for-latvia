@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-16T07:55:35.707Z",
-  "lastUpdated": "2026-10-16T07:55:33.330Z",
+  "generated": "2026-10-17T07:33:25.308Z",
+  "lastUpdated": "2026-10-17T07:33:22.713Z",
   "hasChanges": true,
-  "totalGames": 53,
+  "totalGames": 52,
   "games": [
     {
       "home": "Latvia",
@@ -266,17 +266,6 @@
       "endTime": "2026-02-15T20:10:00.000Z"
     },
     {
-      "home": "Sweden",
-      "away": "Latvia",
-      "venue": "WORLD: Olympic Games - Play Offs",
-      "tournament": "WORLD: Olympic Games - Play Offs",
-      "round": "Quarterfinal",
-      "homeScore": 5,
-      "awayScore": 1,
-      "startTime": "2026-02-17T20:10:00.000Z",
-      "endTime": "2026-02-17T22:10:00.000Z"
-    },
-    {
       "home": "Latvia",
       "away": "Austria",
       "venue": "WORLD: Friendly International",
@@ -327,7 +316,7 @@
       "endTime": "2026-05-02T17:00:00.000Z"
     },
     {
-      "home": "Slovakia",
+      "home": "Slovakia��FH÷Slovakia",
       "away": "Latvia",
       "venue": "WORLD: Friendly International",
       "tournament": "WORLD: Friendly International",
@@ -378,7 +367,7 @@
     },
     {
       "home": "Latvia",
-      "away": "Austria",
+      "away": "Austria��FK÷Austria",
       "venue": "WORLD: World Championship",
       "tournament": "WORLD: World Championship",
       "homeScore": 1,
