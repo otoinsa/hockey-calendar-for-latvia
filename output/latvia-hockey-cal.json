@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-18T07:48:26.209Z",
-  "lastUpdated": "2026-10-18T07:48:24.572Z",
+  "generated": "2026-10-19T08:32:06.685Z",
+  "lastUpdated": "2026-10-19T08:32:04.660Z",
   "hasChanges": true,
   "totalGames": 52,
   "games": [
@@ -216,6 +216,16 @@
       "endTime": "2025-11-09T12:00:00.000Z"
     },
     {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "EUROPE: European Cup of Nations",
+      "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 0,
+      "awayScore": 4,
+      "startTime": "2025-12-11T17:00:00.000Z",
+      "endTime": "2025-12-11T19:00:00.000Z"
+    },
+    {
       "home": "Slovakia",
       "away": "Latvia",
       "venue": "EUROPE: European Cup of Nations",
@@ -224,16 +234,6 @@
       "awayScore": 2,
       "startTime": "2025-12-12T17:00:00.000Z",
       "endTime": "2025-12-12T19:00:00.000Z"
-    },
-    {
-      "home": "Latvia",
-      "away": "USA",
-      "venue": "WORLD: Olympic Games",
-      "tournament": "WORLD: Olympic Games",
-      "homeScore": 1,
-      "awayScore": 5,
-      "startTime": "2026-02-12T20:10:00.000Z",
-      "endTime": "2026-02-12T22:10:00.000Z"
     },
     {
       "home": "Germany",
