@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-19T08:32:06.685Z",
-  "lastUpdated": "2026-10-19T08:32:04.660Z",
+  "generated": "2026-10-20T08:13:44.398Z",
+  "lastUpdated": "2026-10-20T08:13:41.795Z",
   "hasChanges": true,
-  "totalGames": 52,
+  "totalGames": 53,
   "games": [
     {
       "home": "Latvia",
@@ -234,6 +234,16 @@
       "awayScore": 2,
       "startTime": "2025-12-12T17:00:00.000Z",
       "endTime": "2025-12-12T19:00:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "USA",
+      "venue": "WORLD: Olympic Games",
+      "tournament": "WORLD: Olympic Games",
+      "homeScore": 1,
+      "awayScore": 5,
+      "startTime": "2026-02-12T20:10:00.000Z",
+      "endTime": "2026-02-12T22:10:00.000Z"
     },
     {
       "home": "Germany",
