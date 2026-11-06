@@ -1,20 +1,9 @@
 {
-  "generated": "2026-11-05T10:24:48.639Z",
-  "lastUpdated": "2026-11-05T10:24:47.706Z",
+  "generated": "2026-11-06T10:26:48.927Z",
+  "lastUpdated": "2026-11-06T10:26:46.772Z",
   "hasChanges": true,
-  "totalGames": 53,
+  "totalGames": 52,
   "games": [
-    {
-      "home": "Latvia",
-      "away": "France",
-      "venue": "WORLD: Olympic Games - Qualification - Fourth stage",
-      "tournament": "WORLD: Olympic Games - Qualification - Fourth stage",
-      "round": "Qualification",
-      "homeScore": 5,
-      "awayScore": 2,
-      "startTime": "2024-09-01T14:00:00.000Z",
-      "endTime": "2024-09-01T16:00:00.000Z"
-    },
     {
       "home": "Norway",
       "away": "Latvia",
@@ -442,6 +431,8 @@
       "away": "Slovakia",
       "venue": "EUROPE: European Cup of Nations",
       "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 3,
+      "awayScore": 2,
       "startTime": "2026-11-05T15:15:00.000Z",
       "endTime": "2026-11-05T17:15:00.000Z"
     },
