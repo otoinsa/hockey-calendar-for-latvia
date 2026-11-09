@@ -1,19 +1,9 @@
 {
-  "generated": "2026-11-08T09:55:31.762Z",
-  "lastUpdated": "2026-11-08T09:55:29.905Z",
+  "generated": "2026-11-09T10:57:24.084Z",
+  "lastUpdated": "2026-11-09T10:57:21.442Z",
   "hasChanges": true,
-  "totalGames": 51,
+  "totalGames": 50,
   "games": [
-    {
-      "home": "Slovakia",
-      "away": "Latvia",
-      "venue": "EUROPE: International Tournament (Slovakia)",
-      "tournament": "EUROPE: International Tournament (Slovakia)",
-      "homeScore": 2,
-      "awayScore": 1,
-      "startTime": "2024-12-13T17:00:00.000Z",
-      "endTime": "2024-12-13T19:00:00.000Z"
-    },
     {
       "home": "Austria",
       "away": "Latvia",
@@ -441,6 +431,8 @@
       "away": "Austria",
       "venue": "EUROPE: European Cup of Nations",
       "tournament": "EUROPE: European Cup of Nations",
+      "homeScore": 6,
+      "awayScore": 2,
       "startTime": "2026-11-08T10:00:00.000Z",
       "endTime": "2026-11-08T12:00:00.000Z"
     },
