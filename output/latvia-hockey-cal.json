@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-12T10:41:45.065Z",
-  "lastUpdated": "2026-11-12T10:41:43.392Z",
+  "generated": "2026-11-13T10:37:01.522Z",
+  "lastUpdated": "2026-11-13T10:36:59.368Z",
   "hasChanges": true,
-  "totalGames": 49,
+  "totalGames": 50,
   "games": [
     {
       "home": "Austria",
@@ -93,6 +93,16 @@
       "awayScore": 4,
       "startTime": "2025-05-10T18:20:00.000Z",
       "endTime": "2025-05-10T20:20:00.000Z"
+    },
+    {
+      "home": "Latvia",
+      "away": "Canada",
+      "venue": "WORLD: World Championship",
+      "tournament": "WORLD: World Championship",
+      "homeScore": 1,
+      "awayScore": 7,
+      "startTime": "2025-05-11T14:20:00.000Z",
+      "endTime": "2025-05-11T16:20:00.000Z"
     },
     {
       "home": "Slovenia",
