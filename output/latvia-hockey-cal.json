@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-13T10:37:01.522Z",
-  "lastUpdated": "2026-11-13T10:36:59.368Z",
+  "generated": "2026-11-14T09:51:04.679Z",
+  "lastUpdated": "2026-11-14T09:51:02.898Z",
   "hasChanges": true,
   "totalGames": 50,
   "games": [
@@ -69,8 +69,6 @@
       "away": "Latvia",
       "venue": "WORLD: Friendly International",
       "tournament": "WORLD: Friendly International",
-      "homeScore": 1,
-      "awayScore": 2,
       "startTime": "2025-05-02T17:00:00.000Z",
       "endTime": "2025-05-02T19:00:00.000Z"
     },
