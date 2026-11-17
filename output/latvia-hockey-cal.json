@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-16T10:42:16.210Z",
-  "lastUpdated": "2026-11-16T10:42:14.861Z",
+  "generated": "2026-11-17T11:30:38.142Z",
+  "lastUpdated": "2026-11-17T11:30:35.741Z",
   "hasChanges": true,
-  "totalGames": 49,
+  "totalGames": 50,
   "games": [
     {
       "home": "Austria",
@@ -63,6 +63,16 @@
       "awayScore": 4,
       "startTime": "2025-04-25T16:30:00.000Z",
       "endTime": "2025-04-25T18:30:00.000Z"
+    },
+    {
+      "home": "Norway",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 1,
+      "awayScore": 2,
+      "startTime": "2025-05-02T17:00:00.000Z",
+      "endTime": "2025-05-02T19:00:00.000Z"
     },
     {
       "home": "Norway",
