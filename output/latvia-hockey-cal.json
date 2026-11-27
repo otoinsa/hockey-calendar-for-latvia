@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-26T11:56:38.296Z",
-  "lastUpdated": "2026-11-26T11:56:36.379Z",
+  "generated": "2026-11-27T11:49:05.234Z",
+  "lastUpdated": "2026-11-27T11:49:03.368Z",
   "hasChanges": true,
-  "totalGames": 51,
+  "totalGames": 52,
   "games": [
     {
       "home": "Austria",
@@ -296,6 +296,16 @@
       "endTime": "2026-05-02T17:00:00.000Z"
     },
     {
+      "home": "Slovakia",
+      "away": "Latvia",
+      "venue": "WORLD: Friendly International",
+      "tournament": "WORLD: Friendly International",
+      "homeScore": 5,
+      "awayScore": 2,
+      "startTime": "2026-05-03T15:00:00.000Z",
+      "endTime": "2026-05-03T17:00:00.000Z"
+    },
+    {
       "home": "Latvia",
       "away": "Norway",
       "venue": "WORLD: Friendly International",
@@ -388,8 +398,9 @@
     {
       "home": "Norway",
       "away": "Latvia",
-      "venue": "EUROPE: European Cup of Nations",
-      "tournament": "EUROPE: European Cup of Nations",
+      "venue": "WORLD: World Championship - Play Offs",
+      "tournament": "WORLD: World Championship - Play Offs",
+      "round": "Quarterfinal",
       "homeScore": 2,
       "awayScore": 0,
       "startTime": "2026-05-28T18:20:00.000Z",
